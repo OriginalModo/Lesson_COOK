@@ -294,4 +294,8 @@ pip freeze -> requirements.txt
 
 pip git init
 git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin ссылка на репозиторий https://github.com/OriginalModo/Lesson_COOK.git
+git push -u origin main
 '''
