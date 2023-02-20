@@ -299,3 +299,7 @@ git branch -M main
 git remote add origin ссылка на репозиторий https://github.com/OriginalModo/Lesson_COOK.git
 git push -u origin main
 '''
+
+'''
+3 урок 44 минута
+'''

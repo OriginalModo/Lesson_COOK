@@ -18,7 +18,10 @@ class PostDetailView(DetailView):
     slug_url_kwarg = 'post_slug'
     context_object_name = 'post'
 
-def home(request):
-    return render(request, 'base.html')
+# def home(request):
+#     return render(request, 'base.html')
 
-
+class HomeView(ListView):
+    model = Post
+    paginate_by = 9
+    template_name = 'blog/home.html'

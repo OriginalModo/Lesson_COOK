@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'mptt',
+    'ckeditor',
+    # 'ckeditor_uploader',
 
     'blog.apps.BlogConfig',
 
@@ -137,3 +139,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 MPTT_ADMIN_LEVEL_INDENT = 20
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
