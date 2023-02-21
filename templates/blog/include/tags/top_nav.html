@@ -3,24 +3,8 @@
 <nav class="header__menu">
     <ul>
         <li class="active"><a href="/">Главная</a></li>
-        <li>
-            <a href="#">Recipes</a>
-            <div class="header__megamenu__wrapper">
-                <div class="header__megamenu">
-                    <div class="header__megamenu__item">
-                        <div class="header__megamenu__item--pic set-bg"
-                             data-setbg="img/megamenu/p-1.jpg">
-                            <div class="label">Vegan</div>
-                        </div>
-                        <div class="header__megamenu__item--text">
-                            <h5><a href="#">How to Make a Milkshake With Any Ice Cream ...</a>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
 
+        {% get_last_post %}
         {% get_categories %}
         <li><a href="./about.html">О нас</a></li>
         <li><a href="./contact.html">Контакты</a></li>
