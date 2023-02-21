@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # 'ckeditor_uploader',
 
     'blog.apps.BlogConfig',
+    'contact.apps.ContactConfig',
 
 ]
 
