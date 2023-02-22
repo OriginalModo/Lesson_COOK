@@ -181,13 +181,18 @@
                         <div class="widget__title">
                             <h4>Leave a comment</h4>
                         </div>
-                        <form action="#">
+                        <form action="{% url 'create_comment' pk=post.id %}" method="post">
                             <div class="input-list">
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Email">
-                                <input type="text" placeholder="Website">
+                                {% csrf_token %}
+                                {{ form.name }}
+                                {{ form.email }}
+                                {{ form.wedsite }}
+{#                                <input type="text" placeholder="Name">#}
+{#                                <input type="text" placeholder="Email">#}
+{#                                <input type="text" placeholder="Website">#}
                             </div>
-                            <textarea placeholder="Message"></textarea>
+                            {{ form.message }}
+{#                            <textarea placeholder="Message"></textarea>#}
                             <button type="submit" class="site-btn">Submit</button>
                         </form>
                     </div>
