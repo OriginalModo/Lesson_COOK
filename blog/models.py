@@ -65,6 +65,9 @@ class Post(models.Model):
     def get_recipes(self):
         return self.recipe.all()
 
+    def get_comments(self):
+        return self.comment.all()
+
     class Meta:
         verbose_name = 'Пост'
         verbose_name_plural = 'Посты'

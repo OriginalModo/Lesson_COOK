@@ -301,5 +301,5 @@ git push -u origin main
 '''
 
 '''
-5 урок 
+6 урок 30 min
 '''
