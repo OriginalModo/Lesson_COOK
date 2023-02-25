@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load gallery_tags %}
 
 {% block content %}
 
     <!-- Hero Section Begin -->
-{% include 'blog/include/tags/gallery_tag.html' %}
+{% get_gallery %}
     <!-- Hero Section End -->
 
 
